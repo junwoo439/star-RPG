@@ -1,3 +1,23 @@
+# StarRPG 1.3.0 Eclipse 다운로드
+
+[StarRPG 1.3.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.3.0/downloads/StarRPG-1.3.0-Eclipse.zip)
+
+Minecraft 1.21.1 / NeoForge 21.1.235 / JDK 21. Eclipse에서 **StarRPG Client → 싱글플레이**로 실행합니다.
+
+- 방어구 4부위 × 5등급 룬: 정화, 투사체 방어, 밀쳐짐/갈고리 저항, 질주 속도.
+- 월드 2단계부터 냉기 화살 스켈레톤, 독 도약 거미.
+- 룬 각인 도구 조합법 책 해금, 설명, 각인창 Shift+클릭/툴팁.
+- 각인 도구 및 5등급 룬 아이콘 교체. 생성 원본은 art/generated, 게임용 투명 64×64 텍스처 포함.
+- 서브 직업은 구현하지 않았으며 PROFESSIONS-IDEAS.md에 평가와 추가 제안을 담았습니다.
+
+기존 프로젝트에 적용하는 방법과 테스트 순서는 ZIP 안 TESTING-1.3.md를 참고하세요. 기존 프로젝트를 백업하고 run-client 폴더를 유지하면 월드와 추가 모드가 남습니다.
+
+빌드, 자동 GameTest 38개, Eclipse 실행 설정/클라이언트 준비 통과. 실제 Windows Eclipse 화면과 전투감·외부 모드팩 호환은 PC에서 확인해야 합니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.2.0 Eclipse 다운로드
 
 [StarRPG 1.2.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.2.0/downloads/StarRPG-1.2.0-Eclipse.zip)
