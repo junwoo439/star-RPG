@@ -1,3 +1,23 @@
+# StarRPG 1.4.0 Eclipse 다운로드
+
+[StarRPG 1.4.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.4.0/downloads/StarRPG-1.4.0-Eclipse.zip)
+
+Minecraft 1.21.1 / NeoForge 21.1.235 / JDK 21. Eclipse에서 **StarRPG Client → 싱글플레이**로 실행합니다.
+
+- 일반 룬 9개 → 희귀 룬 1개. 별조각 불필요. 희귀 이상 승급 조합은 유지.
+- 방어구 80종: 각 부위/등급마다 4개 후보 중 하나를 각인. 동급 재각인 지원, 기존 각인 보존, 버튼에 마우스를 올려 후보 확인.
+- 활·석궁·삼지창 룬 60종과 강화 지원. 발사 무기 데이터, 충전량, 재사용 시간, 광역 상한 적용. 석궁 폭죽은 제외.
+- 새 무기: 별빛 단검(빠른 공격·후방 보너스), 별철 전투 망치(느린 강타·일시 방어 감소). 조합·강화·검/도끼 룬·인챈트·전용 아이콘 포함.
+- 전체 룬 180종. 서브 직업은 추가하지 않았습니다.
+
+기존 프로젝트를 백업하고 ZIP 안 TESTING-1.4.md의 적용 순서를 따르세요. 새로 가져올 때는 바깥 폴더가 아니라 build.gradle이 있는 StarRPG_Mod를 Existing Gradle Project로 선택합니다. run-client를 유지하면 기존 월드와 추가 모드가 남습니다.
+
+빌드, 자동 GameTest 55개, Eclipse 실행 설정/클라이언트 준비 통과. 실제 Windows Eclipse 화면과 무기 모델·장시간 전투감·외부 모드팩 호환은 PC에서 확인해야 합니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.3.0 Eclipse 다운로드
 
 [StarRPG 1.3.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.3.0/downloads/StarRPG-1.3.0-Eclipse.zip)
