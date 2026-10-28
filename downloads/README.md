@@ -1,3 +1,23 @@
+# StarRPG 1.5.1 Eclipse 다운로드
+
+[StarRPG 1.5.1 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.5.1/downloads/StarRPG-1.5.1-Eclipse.zip)
+
+**외부 모드 설치 수정·검증 완료:** Twilight Forest 4.8.3802 + Mowzie's Mobs 1.8.2 + GeckoLib 4.9.2.
+기존 1.5.0 설치 도구의 잘못된 Twilight Forest 주소를 공식 Maven 배포처로 수정했습니다. 세 모드 파일을 실제로 다운로드·검증·설치하고, 함께 로드한 환경에서 자동 테스트 **68개가 통과**했습니다. 보스 등록·태그·능력치·골드/재료 보상도 확인했습니다. Windows 화면·보스 AI 전체·장시간 탐험까지 검증한 것은 아닙니다.
+
+1. 기존 프로젝트/월드를 백업하고 ZIP 안쪽 **StarRPG_Mod** 폴더를 엽니다.
+2. **setup-adventure-eclipse.bat**을 실행합니다. Java 21과 인터넷이 필요합니다. 외부 모드 JAR 약 64 MB를 공식 배포처에서 내려받고 Eclipse 실행 준비를 합니다.
+3. Eclipse에 안쪽 폴더를 Existing Gradle Project로 가져온 뒤 **StarRPG Client**를 실행합니다. 이미 가져온 프로젝트라면 Gradle Refresh와 F5를 실행합니다.
+4. 게임에서 `/starrpg mods`로 로드 상태, `/starrpg shop`으로 재료 상점을 확인합니다.
+
+Minecraft 1.21.1 / NeoForge 21.1.235 유지. 1.5.0의 몬스터 단계 분포·좀비 약화·골드 경제 기능을 포함합니다. JAR 파일 자체는 ZIP에 묶지 않고 검증한 URL·버전·SHA-512를 고정한 설치 도구를 제공합니다. 같은 모드의 이전 JAR은 백업하며 월드와 다른 모드는 보존합니다.
+
+**Ice and Fire는 공식 배포 버전에 1.21.1이 없어 제외**했습니다. 설치/검증 범위는 MODS-1.5.1.md, 플레이 확인 순서는 TESTING-1.5.1.md를 참고하세요.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.5.0 Eclipse 다운로드
 
 [StarRPG 1.5.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.5.0/downloads/StarRPG-1.5.0-Eclipse.zip)
