@@ -1,3 +1,24 @@
+# StarRPG 1.6.0 Eclipse 다운로드
+
+[StarRPG 1.6.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.6.0/downloads/StarRPG-1.6.0-Eclipse.zip)
+
+- **Shift+H:** 강화 재료 상점, 아이템 판매, 직업·전직, 활 속성 메뉴.
+- **R:** 단검 삼연격 / 망치 충격파 / 대형 화살 / 석궁 5초 고정 사격. 단검 우클릭은 실제 투척·회수.
+- **G:** 전사·척후병·사수·마법사 능력. 2차·3차 전직과 직업별 성장 저장.
+- 얼음·전기·어둠·빛 신규 속성은 활에만 적용. 골드는 보스바 표시.
+- 바닐라 1,332종을 포함한 현재 아이템 2,060종의 판매 기준가와 내구도 감액. 전체 CSV 가격표 포함.
+- 기본 인챈트 차단·기존 장비 인챈트 제거. StarRPG 강화·룬 유지. **기존 월드는 먼저 백업하세요.**
+
+ZIP 안쪽 **StarRPG_Mod**에서 `setup-adventure-eclipse.bat` 실행 → Eclipse의 Existing Gradle Project로 가져오기 → Gradle Refresh/F5 → **StarRPG Client** 실행. JDK 21이 필요합니다. StarRPG만 사용할 때는 `setup-eclipse.bat`을 실행하세요.
+
+Minecraft 1.21.1 / NeoForge 21.1.235. Twilight Forest 4.8.3802, Mowzie 1.8.2, GeckoLib 4.9.2의 기존 검증된 설치 도구를 포함합니다. JAR은 공식 배포처에서 다운로드합니다. Ice and Fire는 호환 공식 빌드가 없어 제외했습니다. 생활직·무한 전직은 보류했습니다.
+
+**자동 테스트 89개 통과**, 빌드·Eclipse 실행 구성 생성 성공. Windows 화면과 실제 다인 PvP는 직접 검증하지 못했습니다. 상세 수치는 BALANCE-1.6.md, 테스트 순서는 TESTING-1.6.md, 전체 가격은 SELL-PRICES-1.6.csv에 있습니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.5.1 Eclipse 다운로드
 
 [StarRPG 1.5.1 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.5.1/downloads/StarRPG-1.5.1-Eclipse.zip)
