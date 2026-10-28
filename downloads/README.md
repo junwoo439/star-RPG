@@ -1,3 +1,25 @@
+# StarRPG 1.5.0 Eclipse 다운로드
+
+[StarRPG 1.5.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.5.0/downloads/StarRPG-1.5.0-Eclipse.zip)
+
+Minecraft 1.21.1 / NeoForge 21.1.235 / Java 21. 안쪽 StarRPG_Mod 폴더를 Gradle 프로젝트로 가져와 StarRPG Client를 실행합니다.
+
+- 월드 5단계에서 개체 3/4/5단계가 섞여 등장. 개체별 차이 저장, 기존 몬스터는 한 번 새 규칙으로 이전.
+- 좀비 추가 능력치 보정 25% 감소, 최고 단계 지급 방어구 2~3부위와 혼합 재질, 지급 무기 철검·인챈트 최대 I. 원래 장비/주운 장비는 보존.
+- 적 처치 골드, 사망 후 유지되는 UUID 지갑, 온라인 송금, `/starrpg shop` 재료 상점.
+- 별가루 20G / 별조각 200G / 일반 룬 120G. 잔액·인벤토리 공간 검증 후 일괄 결제·지급.
+- `/starrpg mods`로 실제 모드 로드 여부 확인.
+
+**외부 모드 설치 상태:** 이 ZIP에 외부 모드 JAR은 없습니다. Mowzie's Mobs/GeckoLib은 기존 파일을 run-client/mods에 유지하세요. Twilight Forest는 install-adventure-mods.bat으로 설치하도록 도구와 보스 태그를 준비했지만, 클라우드 네트워크 정책 차단으로 실제 다운로드/통합 실행은 완료하지 못했습니다. Ice and Fire는 호환 공식 빌드를 확인하지 못해 제외했습니다. 자세한 내용은 MODS-1.5.md를 확인하세요.
+
+기존 프로젝트와 월드를 백업하고 TESTING-1.5.md를 따르세요. 기존 프로젝트를 갱신할 때 run-client를 보존하면 월드와 추가 모드가 유지됩니다.
+
+빌드, NeoForge GameTest 65개, Eclipse 실행 구성/클라이언트 준비 통과. 외부 모드 설치 도구는 가짜 배포 파일로 다운로드 검증·백업·반복 설치·실패 시 보존을 검사했습니다. 실제 Windows 화면/외부 모드팩 실행을 검증한 것은 아닙니다. 앞서 평가만 요청한 직업·무기 액티브·전면 인챈트 제거는 이번에 구현하지 않았습니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.4.0 Eclipse 다운로드
 
 [StarRPG 1.4.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.4.0/downloads/StarRPG-1.4.0-Eclipse.zip)
