@@ -1,3 +1,24 @@
+# StarRPG 1.9.0 Eclipse 다운로드
+
+[**1.9.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.9.0/downloads/StarRPG-1.9.0-Eclipse.zip)
+
+[실제 게임에서 확인한 신규 무기 화면](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.9.0/downloads/StarRPG-1.9.0-Weapons.png)
+
+- **직업 10개:** 전사·척후병·사수·마법사·대장장이·광전사·사제·사신·격투가·수호자. 신규 무기 6종 및 조합법. 망치 전용 능력은 대장장이로 이동.
+- **직업 메뉴:** 이름 클릭은 설명 미리보기. 별도의 확정 버튼으로 선택합니다.
+- **5·10·15회 전직**에 추가 효과 해금, 이후 매 5회 능력치 성장. 1차가 최초 선택이므로 6·11·16차에 해금됩니다.
+- **전문 무기 무한 강화:** 확률 감소·실패 보정, 단계 하락과 강화 파괴 없음. 일반 검·도끼와 방어구는 +10 유지.
+- **월드 난이도 상한 해제**, N−2~N 몬스터 혼합 유지. 22개 특성 계열, 로드된 몬스터 100종 분류. 추가 능력은 예고·쿨타임·연속 제어 방지 적용.
+- 마법 보스바/메뉴에 실제 쿨타임, **23품목 생존 상점** 추가.
+
+**실행:** ZIP을 새 폴더에 풀고 StarRPG_Mod의 `setup-adventure-eclipse.bat` → Eclipse Existing Gradle Project로 가져오기 → Gradle Refresh/F5 → **StarRPG Client**. JDK 21 필요. 추가 모드 없이 실행하려면 `setup-eclipse.bat`을 사용하세요. 기존 프로젝트·월드는 보관하세요.
+
+`BALANCE-1.9.md`에 직업별 능력·조합법·수치, `TESTING-1.9.md`에 테스트 순서가 있습니다. 기존 400개 룬과 기본 인챈트 제거 정책은 유지합니다. 전투 중 일반 내구도 소모는 유지합니다.
+
+**검증:** 외부 Twilight Forest·Mowzie·GeckoLib과 함께 GameTest 133개 통과, 빌드/Eclipse 실행 설정 생성 성공. 실제 Linux Minecraft 클라이언트에서 신규 무기 6종과 지팡이 모델을 확인했습니다. Windows Eclipse GUI와 실제 다인 PvP 체감은 별도 확인이 필요합니다.
+
+---
+
 # StarRPG 1.8.0 Eclipse 다운로드
 
 [StarRPG 1.8.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.8.0/downloads/StarRPG-1.8.0-Eclipse.zip)
