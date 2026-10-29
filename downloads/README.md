@@ -1,3 +1,26 @@
+# StarRPG 2.0.0 Eclipse 다운로드
+
+[**2.0.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.0.0/downloads/StarRPG-2.0.0-Eclipse.zip)
+
+[실제 Minecraft 렌더러에서 확인한 무기 그림·마법진](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.0.0/downloads/StarRPG-2.0.0-Art.png)
+
+- **무기 14계열의 새 그림**을 게임에 적용했습니다. 무기마다 색과 실루엣이 다르며 별도 리소스팩이 필요 없습니다.
+- 기존 R·마법·투척에 회전 마법진과 베기 문양, 새 각성기에 삼중 마법진·광선·충격파 연출을 추가했습니다.
+- **무기 강화 +5·10·15·20·25**를 기준으로 패시브/각성 능력을 해금합니다. 직업 전직 횟수와 별개입니다.
+- **+15: Shift+R 각성기**, +20·25: 무기별 능력 발전. 쿨타임은 무기·직업을 바꿔도 공유합니다.
+- 입문 검·도끼는 +10 유지 및 +5·10 패시브. 전문 무기의 강화 자체는 무한이며, 이번 능력 해금은 +25까지입니다.
+- 기존 직업 10개·룬 400개·경제·무한 월드 난이도를 유지합니다.
+
+**실행:** 새 폴더에 압축 해제 → StarRPG_Mod의 `setup-adventure-eclipse.bat` → Eclipse Existing Gradle Project로 가져오기 → Gradle Refresh/F5 → **StarRPG Client**. JDK 21이 필요합니다. 추가 모드 없이 실행하려면 `setup-eclipse.bat`을 사용하세요. 기존 프로젝트와 월드는 보관하세요.
+
+**빠른 테스트:** 직업 확정 → 해당 무기 장착 → `/starrpg setlevel 15` → **Shift+R**. +20·25도 같은 방식으로 확인하세요. 활은 화살, 지팡이는 마나가 필요합니다. 모든 해금 내용은 아이템 설명과 `WEAPON-UNLOCKS-2.0.csv`에서 확인할 수 있습니다.
+
+**검증:** Twilight Forest·Mowzie·GeckoLib과 함께 GameTest **145개 통과**, 빌드 및 Eclipse 실행 설정 생성 성공. 실제 Minecraft 클라이언트 미리보기에서 무기 14계열과 회전 문양 표시를 확인했습니다. Windows Eclipse GUI와 다인 전투 체감은 별도 플레이 확인이 필요합니다.
+
+수치·조합·이전 버전 호환은 `BALANCE-2.0.md`, 확인 순서는 `TESTING-2.0.md`에 있습니다. 함께 플레이하는 클라이언트와 서버는 같은 2.0.0을 사용하세요.
+
+---
+
 # StarRPG 1.9.0 Eclipse 다운로드
 
 [**1.9.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.9.0/downloads/StarRPG-1.9.0-Eclipse.zip)
