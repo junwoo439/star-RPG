@@ -1,3 +1,27 @@
+# StarRPG 1.7.0 Eclipse 다운로드
+
+[StarRPG 1.7.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.7.0/downloads/StarRPG-1.7.0-Eclipse.zip)
+
+- 전사=검·망치, 척후병=단검, 사수=활·석궁, 마법사=새 별의 지팡이. 다른 직업 무기는 일반 공격만 허용하고 전용 능력·보너스를 제한합니다.
+- 직업마다 다른 전투 실적과 재료를 요구하며, 3차 이후도 계속 전직합니다. XP·실적·재료·골드를 소모하고 능력치 증가량은 완만해집니다. 기존 직업·차수·XP는 유지됩니다.
+- 단검이 회전하며 날아간 뒤 자동 귀환합니다. 강화·룬·내구도를 유지한 실제 아이템을 돌려주며, 인벤토리가 가득 차면 발밑에 떨어집니다.
+- 지팡이 3D 모델, 마나 보스바, 마나탄·화염구·회복·유성 낙하, 강화된 직업 G 능력.
+- 검기·망치 충격음·대형 화살 나선 궤적·석궁 발사 연출. 기존 상점·판매·골드·활 전용 4속성·몬스터 규칙 유지.
+
+**실행:** 기존 프로젝트/월드 백업 → 압축 안 StarRPG_Mod에서 setup-adventure-eclipse.bat 실행 → Eclipse의 Existing Gradle Project로 가져오기 → Gradle Refresh/F5 → StarRPG Client 실행. JDK 21이 필요합니다. 추가 모드 없이 실행하려면 setup-eclipse.bat을 사용합니다.
+
+**조작:** Shift+H 메뉴, R 무기 스킬, G 직업 능력. 단검 우클릭은 투척. 지팡이 우클릭은 선택 주문, Shift+우클릭은 주문 변경입니다.
+
+상세 수치·조합법은 BALANCE-1.7.md, 테스트 순서는 TESTING-1.7.md, 전체 2,061종 판매 기준가는 SELL-PRICES-1.7.csv에 있습니다.
+
+외부 모드 3종을 함께 로드한 **자동 테스트 105개 통과**, 빌드·Eclipse 실행 구성 생성 성공. Windows 화면·다인 PvP는 직접 확인하지 못했습니다. 기본 인챈트 제거는 기존처럼 켜져 있으므로 원본 월드를 보관하세요.
+
+Twilight Forest 4.8.3802 / Mowzie 1.8.2 / GeckoLib 4.9.2 설치 도구 포함. 외부 JAR은 공식 배포처에서 다운로드합니다. Ice and Fire는 호환 공식 빌드가 없어 제외했습니다. 생활직은 보류했습니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.6.0 Eclipse 다운로드
 
 [StarRPG 1.6.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.6.0/downloads/StarRPG-1.6.0-Eclipse.zip)
