@@ -1,3 +1,31 @@
+# StarRPG 1.8.0 Eclipse 다운로드
+
+[StarRPG 1.8.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.8.0/downloads/StarRPG-1.8.0-Eclipse.zip)
+
+[실제 Minecraft 클라이언트에서 확인한 지팡이 화면](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.8.0/downloads/StarRPG-1.8.0-Staff.png)
+
+- 지팡이 투명 현상 수정. 금·자수정·석영 3D 모델을 실제 클라이언트에서 확인했습니다. 별도 리소스팩은 필요 없습니다.
+- 마법 탄환·궤적·폭발·유성 예고 연출 확대, 마나 바의 ‘지팡이를 드세요’ 안내 제거.
+- 10개 장비 유형 × 5등급 × 각 8종 = **400개 룬 효과**. 지팡이 룬 추가.
+- 일반 룬 결과 **일반 70% / 희귀 25% / 에픽 4.9% / 레전더리 0.1%**. 다른 등급도 교차 추첨하며 재각인 시 등급 하락이 가능합니다.
+- 활 4속성을 룬 효과에 통합하고 Shift+H의 별도 부여 메뉴 제거. 기존 별도 활 속성은 다음 재각인까지 유지합니다.
+- **인챈트 테이블 우클릭으로 장비 강화**. 별가루·별조각 재료와 기존 강화 단계/실패 보정 유지.
+- 주민의 기본 인챈트 책 거래를 별가루 거래로 전환하고 장비 거래에서 기본 인챈트 제거.
+- 전직 화면에 직업 카드·아이콘·진행 막대·재료 조건 추가. 단검 근접 사거리 2.3칸.
+- 기본 구매 가격 별가루 **40 G**, 별조각 **400 G**, 일반 룬 120 G.
+
+**실행:** 기존 프로젝트/월드 백업 → 압축 안 StarRPG_Mod에서 setup-adventure-eclipse.bat → Eclipse의 Existing Gradle Project로 가져오기 → Gradle Refresh/F5 → StarRPG Client. JDK 21이 필요하며, 추가 모드 없이 실행할 때는 setup-eclipse.bat을 사용합니다.
+
+전체 확률·수치는 BALANCE-1.8.md, 400개 효과 목록은 RUNE-EFFECTS-1.8.csv, 테스트 순서는 TESTING-1.8.md를 확인하세요. 기존 무한 전직·귀환 단검·마법·골드 경제 기능을 포함합니다.
+
+**자동 테스트 120개 통과**, 빌드·Eclipse 준비 성공. 실제 Linux 클라이언트에서 지팡이 모델 36개 면과 화면 표시를 확인했습니다. Windows Eclipse·실제 다인 PvP·모든 화면 해상도는 별도 플레이 확인이 필요합니다.
+
+외부 모드는 검증된 Twilight Forest 4.8.3802 / Mowzie 1.8.2 / GeckoLib 4.9.2 설치 도구로 다운로드합니다. Ice and Fire는 호환 공식 빌드가 없어 제외했습니다. 생활직은 보류했습니다.
+
+---
+
+## 이전 버전
+
 # StarRPG 1.7.0 Eclipse 다운로드
 
 [StarRPG 1.7.0 Eclipse 프로젝트 ZIP 다운로드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v1.7.0/downloads/StarRPG-1.7.0-Eclipse.zip)
