@@ -1,3 +1,24 @@
+# StarRPG 2.1.0 Eclipse 다운로드
+
+[**2.1.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.1.0/downloads/StarRPG-2.1.0-Eclipse.zip)
+
+[실제 클라이언트 미리보기: 기본 외형 복원·직업 무기·속성 마법 문양](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.1.0/downloads/StarRPG-2.1.0-Art.png)
+
+- **강화 피해 상향:** +25 직업 무기는 기본 설정의 난이도 5 좀비·스켈레톤·거미·크리퍼를 충전 공격/완충 화살/마법 공격 한 번으로 처치하도록 검증했습니다. 고급 장비·보스·더 높은 난이도는 별도입니다.
+- **직업 총 16개:** 기존 마법사 유지 + 화염술사·해류술사·빙결술사·대지술사·암흑술사·광휘술사. 기존 별의 지팡이를 쓰며 직업별 주문·효과·전직 재료가 다릅니다.
+- **룬 없이 직업 무기 고유 효과:** 단검·장창·대검·사수 화살 출혈, 낫·대검·홀·어둠/빛 마법의 흡혈/회복, 망치·방패검 약화, 건틀릿 둔화 등. 실제 피해 기반 회복·재사용 제한을 적용했습니다.
+- **기본 Minecraft 무기 외형 복원:** 검·도끼·활·석궁·삼지창. 자체 직업 무기 그림은 유지합니다.
+- 모든 마법의 회전 문양·속성별 발사/충돌/보조 연출과 다른 직업의 무기 연출을 강화했습니다.
+- 기존 +5/10/15/20/25 무기 해금·Shift+R, 무한 강화·전직·몬스터 난이도를 유지합니다.
+
+**실행:** 반드시 새 폴더에 압축 해제 → StarRPG_Mod의 `setup-adventure-eclipse.bat` → Eclipse Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. JDK 21이 필요합니다. 추가 모드 없이 실행하려면 `setup-eclipse.bat`을 사용하세요. 2.0 폴더에 덮어쓰면 삭제된 기본 무기 외형 파일이 남을 수 있습니다. 기존 월드는 보관하세요.
+
+**빠른 확인:** Shift+H → 직업 탭의 ◀/▶로 두 페이지 탐색 → 이름 클릭은 미리보기, 확정 버튼으로 선택. 새 마법사는 둘째 페이지에 있습니다. 무기를 들고 `/starrpg setlevel 25` 후 충전 공격/우클릭 마법/R/Shift+R을 비교하세요.
+
+**검증:** Twilight Forest·Mowzie·GeckoLib과 함께 자동 GameTest **156개 통과**. 실제 클라이언트에서 기본 무기 복원과 9개 직업 무기 모델·7개 마법 계열 회전 문양을 확인했습니다. 화면은 렌더러 미리보기이며 Windows Eclipse GUI·실제 다인 전투 체감은 별도 확인이 필요합니다. 상세 수치와 테스트 순서는 `BALANCE-2.1.md`, `TESTING-2.1.md`에 있습니다. 함께 플레이하는 클라이언트와 서버는 같은 2.1.0을 사용하세요.
+
+---
+
 # StarRPG 2.0.0 Eclipse 다운로드
 
 [**2.0.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.0.0/downloads/StarRPG-2.0.0-Eclipse.zip)
