@@ -1,3 +1,22 @@
+# StarRPG 2.2.0 Eclipse 다운로드
+
+[**2.2.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.2.0/downloads/StarRPG-2.2.0-Eclipse.zip)
+
+[새 이펙트 렌더러 미리보기](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.2.0/downloads/StarRPG-2.2.0-Effects.png) · [무기 잡는 위치 미리보기](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.2.0/downloads/StarRPG-2.2.0-Grips.png)
+
+- **무기 자세 개선:** 9개 직업 무기에 개별 손잡이 위치·크기·각도, 1/3인칭 양손 표시를 적용하고 옆면 두께를 추가했습니다. 건틀릿은 손에 한 개를 표시합니다. Minecraft 기본 무기 외형은 유지합니다.
+- **새로 그린 효과 16종:** 마법진·번개·얼음 결정·회오리·광주·화염·물보라·암석·영혼 날개·방패·타격·치유 등의 투명 그림을 회전/확대/소멸시키며 모든 마법 계열과 다른 직업의 능력에 연결했습니다.
+- **직업 변경 초기화:** 변경 확정과 500 G 결제 성공 시 인벤토리·보조 손의 이전 직업 무기 전부 +0. 메뉴 커서와 판매 칸의 소지 무기도 포함합니다. 룬·이름·내구도와 다른 직업 장비는 유지합니다. 최초 선택·미리보기·같은 직업의 전직·거절된 변경에는 적용하지 않습니다. 상세 화면과 확정 버튼에 초기화 안내를 표시합니다.
+- +25 사냥 성능, 16개 직업, 무한 강화·전직·몬스터 난이도, 기존 룬은 2.1 기준을 유지합니다.
+
+**실행:** 새 폴더에 압축 해제 → StarRPG_Mod의 `setup-adventure-eclipse.bat` → Eclipse Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. JDK 21이 필요합니다. 추가 모드 없이 실행하려면 `setup-eclipse.bat`을 사용하세요. 기존 월드는 보관하세요.
+
+**검증:** Twilight Forest·Mowzie·GeckoLib과 함께 GameTest **163개 통과**. 실제 클라이언트에서 아이템 표시 변환과 새 이펙트 렌더러 미리보기를 확인했습니다. 화면의 십자는 손 기준 위치를 나타내는 검증 표식이며 게임에는 표시하지 않습니다. Windows Eclipse GUI·실제 손/시야에서의 체감·다인 전투 성능은 별도 플레이 확인이 필요합니다.
+
+전체 소스·Gradle 설정·게임 텍스처를 포함합니다. 실행에 불필요한 `art/` 원화 사본과 과거 검증 스크린샷은 ZIP에서 제외했습니다. `BALANCE-2.2.md`, `TESTING-2.2.md`에 수치와 확인 순서가 있습니다. 함께 플레이하는 클라이언트와 서버는 같은 2.2.0을 사용하세요.
+
+---
+
 # StarRPG 2.1.0 Eclipse 다운로드
 
 [**2.1.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.1.0/downloads/StarRPG-2.1.0-Eclipse.zip)
