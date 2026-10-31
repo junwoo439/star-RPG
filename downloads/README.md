@@ -1,3 +1,26 @@
+# StarRPG 2.3.0 Eclipse 다운로드
+
+[**2.3.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Eclipse.zip)
+
+[실제 게임: 얼음 궁극기](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Ice-Ultimate.png) · [양손 건틀릿](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Gauntlets.png) · [장창 자세](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Spear.png) · [단검 궤적](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Dagger-Trail.png)
+
+[지팡이 6종 렌더러 미리보기](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Staffs.png)
+
+- **커스텀 이펙트 표시 오류 수정:** 카메라 월드 좌표를 거리로 오인하던 계산을 수정했습니다. 높은 고도/먼 좌표에서도 가까운 마법진과 무기 궤적이 보입니다.
+- **무기별 3D 궤적:** 가늘어지는 참격, 관통 찌르기, 주먹 충격 고리, 망치 파동, 낫의 회전 베기, 투사체 꼬리를 추가했습니다. 원소 궁극기는 준비 고리와 대형 형상, 광주/나선/방사형 충격을 함께 표시합니다.
+- **양손 전투:** 건틀릿 아이템 1개로 양손 착용과 좌우 교대 타격을 표시합니다. R은 실제 시간차 3연타입니다. 장창은 양손 잡기와 찌르기를 표시합니다. 보조 손에 다른 물건이 있으면 한손 표시로 돌아갑니다.
+- **13개 직업:** 일반 마법사→화염술사, 사제→광휘술사, 수호자→전사. 기존 기록은 높은 값을 보존하며 자동 이전에는 비용이나 강화 초기화가 없습니다. 빛의 홀은 기존 룬을 보존하는 호환 무기로 남습니다.
+- **원소별 지팡이 6종:** 새 원화, 별도 아이템/조합법, 해당 원소 직업 제한, 지팡이 룬과 무한 강화 지원.
+- **전직의 실제 기능:** 관통·도탄·파쇄·추가타·회복·원소 연계. G는 기존 능력에 6초/최대 3회 강화 타격을 추가합니다. 전직 5/10/15회에서 발전합니다.
+- **직접 직업 변경 시 +0:** 500 G 결제가 성공하면 소지한 이전 직업 무기만 초기화합니다. 다른 원소 무기·룬·내구도·같은 직업 전직은 유지합니다. +25 사냥 성능, 기본 마크 무기 외형, 기존 강화/룬/경제 시스템도 유지합니다.
+
+**실행:** 새 폴더에 압축 해제 → `StarRPG_Mod/setup-adventure-eclipse.bat` 또는 `setup-eclipse.bat` → Eclipse Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client** → 싱글플레이. JDK 21이 필요합니다. 별도 서버를 실행할 필요가 없습니다.
+
+**검증:** Twilight Forest·Mowzie·GeckoLib과 함께 GameTest **174개 통과**. 실제 클라이언트의 별도 테스트 월드에서 1/3인칭, 좌우 주손, 보조 손 횃불, 고도 Y=181의 커스텀 이펙트를 확인했습니다. Windows Eclipse GUI와 다인 PvP의 체감/성능은 별도 확인이 필요합니다.
+
+전체 소스·Gradle/Eclipse 설정·게임 텍스처를 포함하며 월드, 캐시, 원화 사본, 개발자 스크린샷은 ZIP에서 제외합니다. 기존 월드는 보관하세요. `BALANCE-2.3.md`, `TESTING-2.3.md`에 수치·조합법·이전 규칙·테스트 순서가 있습니다. 함께 플레이할 때는 양쪽 모두 2.3.0을 사용하세요.
+
+<!-- END 2.3.0 -->
 # StarRPG 2.2.0 Eclipse 다운로드
 
 [**2.2.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.2.0/downloads/StarRPG-2.2.0-Eclipse.zip)
