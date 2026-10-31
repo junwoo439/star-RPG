@@ -1,3 +1,24 @@
+# StarRPG 2.4.0 Eclipse 다운로드
+
+[**2.4.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Eclipse.zip)
+
+[실제 게임: 용 근접 모습](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Dragon-Closeup.png) · [용과 히드라](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Dragons.png) · [휴머노이드와 리치](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Humanoids.png) · [공격 범위 예고](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Telegraphs.png)
+
+- **몬스터 53종 / 보스 19종:** 야수, 아인종, 언데드, 드래곤/파충류, 악마/천상계, 정령/거인, 골렘 계열. 종족별 크기·색상·관절 모델과 공격 유형을 추가했습니다. 용의 턱·이빨·뿔·날개막·분절 꼬리, 몬스터별 비늘·털·갑옷·뼈·돌 재질을 새로 제작했습니다.
+- **자연 출현 + 소환:** 지정 바이옴과 월드 단계에 따라 출현합니다. 보스 소환 계약서는 웅크리기+우클릭으로 대상을 바꾸고 바닥 우클릭으로 사용합니다. 가까운 보스 중복 출현을 제한합니다. 금속룡과 천상계는 중립입니다.
+- **읽고 대응하는 전투:** 약공격은 약하게, 강공격은 긴 준비 동작과 바닥 예고 후 높은 피해/짧은 스턴. 금색은 패링 가능, 빨간색은 회피 대상입니다. 방향 고정·벽 차단·공격 후 빈틈·연속 스턴 방지를 적용했습니다.
+- **V 패링:** 근접 무기/방패로 정면 타격을 맞춰 방어하면 적이 경직됩니다. 2초 안에 충전 공격으로 반격하면 1회 +25% 피해. 성공 창 0.25초, 재사용 1.2초입니다.
+- **기존 성장/보상 연동:** 월드 N−2~N 단계, 무한 성장, 보스 골드/별 가루/룬 보상. 기존 무기·직업·강화·룬·상점 기능도 포함합니다.
+
+**실행:** 새 폴더에 압축 해제 → 내부 `StarRPG_Mod/setup-eclipse.bat` 또는 `setup-adventure-eclipse.bat` → Eclipse Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client** → 싱글플레이. JDK 21이 필요하며 별도 서버 실행은 필요 없습니다.
+
+**검증:** Twilight Forest·Mowzie·GeckoLib과 함께 GameTest **191개 통과**. 실제 클라이언트에서 53종 렌더러 로드 및 대표 모델·공격 예고를 확인했습니다. Windows Eclipse GUI와 다인 전투의 체감/성능은 사용 환경에서 확인해 주세요.
+
+이번 몬스터는 직접 만든 23종 관절형 모델과 새로 그린 16종 재질 아틀라스를 사용합니다. 용과 날개 달린 종족의 AI는 지상 전투용입니다. 비행 보스전·전용 던전·다단계 페이즈와 외부 모드의 모든 공격에 대한 패링은 포함하지 않습니다. Ice and Fire를 설치한 업데이트는 아닙니다.
+
+전체 수정 소스·Gradle/Eclipse 설정·게임 리소스를 포함합니다. 월드·캐시·개발자 스크린샷은 ZIP에서 제외합니다. 기존 월드를 보관하고 `TESTING-2.4.md` 순서로 확인하세요. `BALANCE-2.4.md`와 `BESTIARY-2.4.csv`에 수치·지역·보스 소환 조합법이 있습니다. 함께 플레이할 때는 양쪽 모두 2.4.0을 사용하세요.
+
+<!-- END 2.4.0 -->
 # StarRPG 2.3.0 Eclipse 다운로드
 
 [**2.3.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.3.0/downloads/StarRPG-2.3.0-Eclipse.zip)
