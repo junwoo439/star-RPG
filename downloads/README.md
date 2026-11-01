@@ -1,3 +1,27 @@
+# StarRPG 2.5.0 — 몬스터 외형·마법·무기 이펙트
+
+[**모드 JAR 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/starrpg-2.5.0.jar) · [**Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Showcase.mp4)
+
+[용](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Dragons.png) · [유령/뱀파이어/골렘](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Creatures.png) · [화염](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Fire.png) · [얼음](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Ice.png) · [빛](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Light.png) · [브레스](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Breath.png) · [참격](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Slash.png) · [패링](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Parry.png) · [강화](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Upgrade.png) · [전직](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Advancement.png)
+
+- 용의 종류별 뿔·볏·수염, 몸통 윤곽, 종족별 망토·반투명 몸·부유 장갑판, 걷기/호흡/공격 준비/피격 움직임을 개선했습니다.
+- 새 투명 이펙트 원화와 입체 도형으로 불·물·얼음·흙·어둠·빛의 마법진, 회오리, 결정체, 파편, 날개와 빛 기둥을 만들었습니다.
+- 단검·창·건틀릿·망치·사격·낫의 공격 궤적과 마법 투사체, 용 보스 브레스를 교체했습니다.
+- **패링과 공격 동작:** 무기를 세워 막는 준비 자세, 성공 반동과 금빛 파편, 무기별 1·3인칭 공격을 추가했습니다.
+- **강화·전직:** 메뉴 위와 월드에 별이 떨어집니다. 강화 단계/직업마다 색이 다르고, 실패는 회색 파편으로 구분합니다.
+- **F8: 가벼움/균형/화려함.** 품질을 낮춰도 공격 위험 범위는 유지합니다. 기본 설정은 화려함이며 별도 셰이더 팩이 필요 없습니다.
+
+**일반 설치:** Minecraft **1.21.1**, NeoForge **21.1.235**, Java **21**. 서버와 참여자 모두 이전 StarRPG JAR을 제거하고 같은 `starrpg-2.5.0.jar`를 `mods`에 넣습니다. 기존 월드를 보관한 뒤 업데이트하세요. 외부 모드는 합본이 아니므로 함께 쓰던 모드/라이브러리 버전도 맞춥니다.
+
+**Eclipse:** ZIP → 내부 `StarRPG_Mod/setup-eclipse.bat` → Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. 외부 모드 설치까지 하려면 `setup-adventure-eclipse.bat`을 사용합니다. Eclipse 개발 실행에는 StarRPG JAR을 `run-client/mods`에 추가하지 않습니다. 직접 빌드는 `gradlew.bat build`, 결과는 `build/libs/starrpg-2.5.0.jar`입니다.
+
+**검증:** 자동 GameTest **196개 통과**, 실제 클라이언트의 53종 렌더러 로드, 대표 모델/원소별 궁극기/무기 궤적/투사체/품질 단계 확인. Mowzie·GeckoLib·Twilight Forest를 함께 사용한 개발 환경에서 확인했습니다. 영상은 실제 테스트 월드의 모델·연출 시연을 촬영한 것입니다. Windows Eclipse GUI, 외부 셰이더 조합과 대규모 멀티플레이 성능은 사용자 환경에서 확인해야 합니다.
+
+모델은 23개 기본 체형을 공유하는 StarRPG 자체 53종에 적용됩니다. 외부 모드 모델 교체나 비행 AI 추가는 포함하지 않습니다. 장식용 브레스는 추가 피해를 주지 않습니다. 바닐라 검·도끼·활·석궁 이미지는 유지합니다.
+
+ZIP의 `VISUALS-2.5.md`, `TESTING-2.5.md`, `ART-2.5.md`에 변경점·설치·테스트·제작 방식을 정리했습니다. 소스와 게임 리소스는 포함하고 월드/캐시/개발 PC 실행 파일은 제외했습니다.
+
+<!-- END 2.5.0 -->
 # StarRPG 2.4.0 Eclipse 다운로드
 
 [**2.4.0 Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.4.0/downloads/StarRPG-2.4.0-Eclipse.zip)
