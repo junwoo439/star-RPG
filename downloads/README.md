@@ -1,3 +1,28 @@
+# StarRPG 2.6.0 — 별의 연대기
+
+[**모드 JAR**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/starrpg-2.6.0.jar) · [**Eclipse 소스 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Eclipse.zip) · [**실제 게임 시연 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Showcase.mp4)
+
+[뽑기식 결과 화면](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Reveal.png) · [새 동물](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Animals.png) · [휴머노이드](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Humanoids.png) · [던전](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Dungeon.png) · [공중 적룡](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Flight.png) · [의뢰](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Quests.png) · [스킬 트리](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Skills.png) · [전설 제작](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Craft-Reveal.png)
+
+- **뽑기식 강화·전직 결과:** 집결→낙하→단계 색→충돌→장비/이름/별 공개. 서버가 실제 결과를 확정하고, 스킵·종료로 아이템이 중복 지급되지 않습니다. 첨부된 Gacha Craft 연출 구성을 참고해 StarRPG용으로 새 구현했습니다.
+- **몬스터:** 새 재질과 체형·갈기·송곳니·옷깃·이끼·볏. StarRPG 자체 53종의 체형/재질 체계를 개선했습니다.
+- **던전:** 새 청크의 지하 유적/폐성/마법사 탑, 3층의 일반3→정예2→보스1, 유적 장비·재료와 최초 완료 보상.
+- **보스:** 19종의 체력50/25% 단계 변화, 계열별 증원, 드래곤의 실제 이륙·바닥 예고·공중 공격·착륙.
+- **성장:** 활성13직업의 두 경로/3단계 선택, 1·4·7차 해금과 500G 초기화. 전용 무기의 마법·화살·직접 공격·무기 스킬에 적용됩니다.
+- **의뢰:** 마을 기록관의 메인5장과 순환 일일 의뢰. NPC 근처에서 수락/보상받기, 업적/진행 저장.
+- **전설:** 보스 재료 기반3세트12부위, 2/4부위 효과, 기존 강화·룬 연동.
+- **생활:** 광부·생활 대장장이·농부·어부. 광석→합금 및 약초·비늘 생산을 전설 제작과 경제에 연결했습니다.
+- **월드/수집:** 균열 침공5분 제한, 성공 보상/실패 강화 적2분 잔존·소멸. 53종 발견/공격/지역/전리품 도감과10회/전체 수집 보상.
+
+**실행:** Minecraft **1.21.1 / NeoForge21.1.235 / Java21**. 서버와 참여자 모두 이전 StarRPG JAR을 같은2.6.0으로 교체합니다. 기존 월드를 보관하세요. 자연 던전은 **새로 생성되는 청크**에서 찾습니다. 새 기능 메뉴는 **Shift+H → 모험**입니다.
+
+**Eclipse:** ZIP → 내부 `StarRPG_Mod/setup-eclipse.bat` → Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. 외부 모드 설치까지 하려면 `setup-adventure-eclipse.bat`. 개발 실행의 `run-client/mods`에는 별도 StarRPG JAR을 넣지 않습니다.
+
+**검증:** 자동 GameTest **212개 통과**. 실제 새 클라이언트 월드에서3파 던전 정복/보상, 균열 성공·실패·잔존 적 소멸, NPC 의뢰, 합금→전설 제작, 트리 습득, 드래곤 이륙과 결과 화면을 확인했습니다. Mowzie·GeckoLib·Twilight Forest를 함께 사용했습니다. Windows Eclipse GUI, 대규모 멀티플레이와 외부 셰이더 성능은 사용자 환경에서 추가 확인이 필요합니다.
+
+소스 ZIP의 `ADVENTURE-2.6.md`에 전체 사용법·수치·재료, `TESTING-2.6.md`에 확인 순서, `ART-2.6.md`에 제작/참고 기록을 넣었습니다. 월드·캐시·개발 PC 실행 파일과 참고 Fabric JAR은 포함하지 않습니다. 모델은23개 기본 체형을 공유하며 외부 모드 몬스터를 바꾸지 않습니다. 유적 무기와 전설 방어구는 기존 계열/바닐라 장비 외형을 사용합니다.
+
+<!-- END 2.6.0 -->
 # StarRPG 2.5.0 — 몬스터 외형·마법·무기 이펙트
 
 [**모드 JAR 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/starrpg-2.5.0.jar) · [**Eclipse 프로젝트 ZIP 다운로드**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.5.0/downloads/StarRPG-2.5.0-Showcase.mp4)
