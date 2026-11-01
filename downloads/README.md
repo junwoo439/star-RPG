@@ -1,3 +1,23 @@
+# StarRPG 2.7.0 — 직업 이름·용 동작·고대 건축
+
+[**모드 JAR**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/starrpg-2.7.0.jar) · [**Eclipse 소스 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Showcase.mp4)
+
+[사막 신전](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Desert.png) · [설원 성채](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Snow.png) · [숲 유적 입구](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Forest.png) · [늪지 성채](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Swamp.png) · [산악 첨탑](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Mountain.png) · [평원 성채](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Castle.png) · [용의 비행](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Flight.png)
+
+- **직업명:** 창술사·암살자·궁수, 화염/물/얼음/대지/빛의 마법사·흑마법사 등으로 표기를 정리했습니다. 저장 ID·전직 횟수·XP·강화·스킬 트리는 유지합니다.
+- **용의 동작:** 부드러운 이륙/하강 곡선과 방향 전환, 날개 펼침/접힘, 몸통·꼬리 지연 움직임, 다리 접기와 착지 자세를 연결했습니다. 공격 예고와 타격 시점은 유지합니다.
+- **던전:** 사막·설원·숲·늪·산악·평원 재료를 사용하고 높은 기둥·돌출 처마·아치·탑·첨탑·눈/이끼 장식을 더했습니다. 최대15×15 공간에 높이 약24~37블록의 구조로 생성하며, 지하 유적은 지상 표식에서 내려갑니다. 새 던전의 층 간격은8블록, 기존2.6 던전은6블록을 유지합니다.
+- 기존2.6의 뽑기식 강화/전직 결과, 생활 직업·스킬 트리·NPC 의뢰·세트·균열·도감도 포함합니다.
+
+**설치:** Minecraft **1.21.1 / NeoForge21.1.235 / Java21**. 기존 월드를 보관한 뒤 서버와 참여자 모두 이전 StarRPG JAR을 같은 **2.7.0**으로 교체하세요. 새 건축물은 **새 청크**에서 생성됩니다.
+
+**Eclipse:** ZIP → `StarRPG_Mod/setup-eclipse.bat` → Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. 외부 모드까지 설치하려면 `setup-adventure-eclipse.bat`. 개발 실행의 `run-client/mods`에는 별도 StarRPG JAR을 넣지 않습니다.
+
+**검증:** GameTest **213개 통과**, 기존 저장 블록 상태 호환성 확인. 실제 클라이언트에서6개 지형 생성, 새3층 던전 일반→정예→보스 완료, 균열·의뢰·제작·트리, 용 이륙/공중 공격/착륙을 확인했습니다. 미리보기는 새 검증 월드에서 촬영했으며 영상의 던전 소개는2배속, 용의 비행은 원속도입니다. Windows Eclipse GUI와 대규모 멀티플레이 성능은 별도 환경에서 확인이 필요합니다.
+
+상세 변경·테스트 순서는 ZIP의 `UPDATE-2.7.md`, 기존 사용법은 `ADVENTURE-2.6.md`입니다. 외부 모드 몬스터와 바닐라 무기 이미지는 교체하지 않습니다. 월드·캐시·개발 PC 실행 설정·참고 Fabric JAR은 포함하지 않습니다.
+
+<!-- END 2.7.0 -->
 # StarRPG 2.6.0 — 별의 연대기
 
 [**모드 JAR**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/starrpg-2.6.0.jar) · [**Eclipse 소스 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Eclipse.zip) · [**실제 게임 시연 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.6.0/downloads/StarRPG-2.6.0-Showcase.mp4)
