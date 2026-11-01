@@ -1,3 +1,24 @@
+# StarRPG 2.8.0 — IceAndFire CE 드래곤 연동
+
+[**통합 설치 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Dragon-Setup.zip) · [**Eclipse 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Showcase.mp4) · [StarRPG JAR만](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/starrpg-2.8.0.jar)
+
+[적룡](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Red.png) · [백룡](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Ice.png) · [청룡](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Lightning.png) · [불 브레스](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Fire-Breath.png) · [서리 브레스](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Frost-Breath.png) · [번개 브레스](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Lightning-Breath.png) · [비행](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Flight.png) · [급강하](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Dive.png)
+
+**설치:** Minecraft **1.21.1 / NeoForge21.1.235 / Java21**. 통합 설치 ZIP을 완전히 풀고 `install-dragon-mods.bat` 실행 → 생성된 `mods`의 **다섯JAR**을 서버와 모든 참여자에게 동일하게 설치합니다. 이전 StarRPG JAR을 교체하세요. 인터넷 연결이 필요합니다. 설치 도구가 공식 CDN에서 네 외부 모드를 내려받아 해시·모드 ID를 검증하고, 관련 이전 버전을 백업하며 실패 시 되돌립니다. ZIP에는 StarRPG JAR과 설치 도구가 들어 있고 CE/라이브러리 JAR은 실행 시 다운로드합니다.
+
+- **호환판:** [IceAndFire Community Edition2.0](https://modrinth.com/mod/iceandfire-ce/version/soR168tk) + Jupiter2.3.7 + Uranus2.4.1 + Architectury13.0.11 NeoForge. CE는 별도 커뮤니티 이식판입니다. 원본 Ice and Fire의1.20.1 JAR을 바꿔 넣는 방식이 아닙니다.
+- **외형/모션:** StarRPG 용10종이 실제 CE의 성체 모델·텍스처·날개/목/꼬리 관절 애니메이션을 사용합니다. 불/얼음/번개 체형과 여러 CE 스킨을 매핑하며 일부 금속룡은bronze 스킨을 공유합니다. 표시용 개체는 월드에 추가하지 않습니다.
+- **전투:** 40틱 준비 뒤 속성 브레스 쓸기·벽 충돌, 꼬리 휩쓸기·날개 돌풍 패링,50% 공중 브레스·25% 급강하와 지상 예고/회복. 머리·목·꼬리의 피격 부위도 동일한 보스 체력을 사용합니다.
+- **기존 진행:** 보스 UUID·난이도·소환 계약·던전·보상·도감·의뢰를 유지합니다. CE 자체 콘텐츠도 함께 추가되고, 야생 CE 용에는 보스 난이도 태그를 적용하며 길들인 용은 제외합니다.
+- **호환 처리:** CE의 Farmer’s Delight 선택 레시피5개에 조건을 넣어 해당 모드가 없는 환경의 레시피 파싱 오류를 해결했습니다. upstream JAR은 수정하지 않습니다. 출처·해시·라이선스를 동봉했습니다.
+
+**Eclipse:** 소스 ZIP → `StarRPG_Mod/setup-adventure-eclipse.bat` → Existing Gradle Project → Gradle Refresh/F5 → **StarRPG Client**. 개발 실행의 `run-client/mods`에는 별도 StarRPG JAR을 넣지 않습니다. StarRPG 단독 설치에서는 자체 용 모델과 새 전투를 사용합니다.
+
+**검증:** CE 및 필수 라이브러리를 설치한 전용 GameTest 서버에서 **222개 통과**, CE 없는 환경에서도 **222개 통과**. 실제 클라이언트에서 성체 모델·속성 브레스·꼬리·날개·공중 브레스·급강하·착륙을 확인했습니다. 설치 도구의 다운로드/해시/이전 버전 백업/충돌 시 원복도 실제 검증했습니다. Windows Eclipse GUI와 대규모 멀티플레이 성능은 별도 환경에서 확인이 필요합니다. 영상과 사진은 새 검증 월드에서 촬영했습니다.
+
+상세 변경·설치는 `UPDATE-2.8.md`, 출처는 `THIRD-PARTY-2.8.md`입니다. CE 자체 자연 구조물은 새 청크에 생성됩니다. 기존 월드를 보관하고 적용하세요. 기존2.7의 직업 이름·지형 던전과2.6 모험 시스템도 포함합니다.
+
+<!-- END 2.8.0 -->
 # StarRPG 2.7.0 — 직업 이름·용 동작·고대 건축
 
 [**모드 JAR**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/starrpg-2.7.0.jar) · [**Eclipse 소스 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.7.0/downloads/StarRPG-2.7.0-Showcase.mp4)
