@@ -1,3 +1,20 @@
+# StarRPG 2.9.1 — UI·성능·기존 월드 검수
+
+[**통합 설치 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Setup.zip) · [**Eclipse 소스 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Eclipse.zip) · [JAR만](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/starrpg-2.9.1.jar) · [검증 사진·실측 ZIP](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-QA.zip)
+
+**Minecraft1.21.1 / NeoForge21.1.235 / Java21.** 설치 ZIP을 완전히 풀고 **install-all-mods.bat**을 실행합니다. 생성된 **여덟 JAR을 서버와 모든 참여자에게 동일하게 설치**하고 같은 모드의 구버전을 교체하세요. Eclipse는 setup-adventure-eclipse.bat → Existing Gradle Project → StarRPG Client입니다.
+
+**이전에 추가한 용10종은 그대로 있습니다.** 기존 CE 외형·관절 모션·공중 브레스·급강하·착륙을 유지합니다. 실제2.8월드에 저장된 용도 복사본에서 불러와 확인했습니다. 자연 출현은 월드8~12단계와 서식지 조건을 따르며 소환 계약도 유지합니다. CE가 클라이언트에 없으면 자체 용 모델로 표시됩니다. [**용10종 실제 화면**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Dragons.png) · [**비행 실제 화면**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Dragon-Flight.png)
+
+- 여섯 메뉴의 작은 창·GUI 배율 대응, 실제 클릭/드래그/툴팁 좌표 수정, 강화 정보 겹침 정리와 각성 설명 스크롤. [작은 화면](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Small-UI.png)
+- 반복 경로 요청·장신구 해석·보스바 문자열·반사 탐색·정점/법선 임시 객체를 줄였습니다.53종229,424정점을 기존 계산과 비교했습니다. 기존 리소스400개와 수치·ID·저장 키·통신을 유지합니다.
+- **CE 포함253개 / CE 없는 구성253개 자동 검사 통과.**53종 실제 게임 상태265장,13직업52구성의 실제 피해/대기시간,2·3페이즈 용 비행/착륙을 확인했습니다.
+- **실제 클라이언트2개 TCP 멀티플레이**로 파티·의뢰·제작/장착·레이드 기여/개인 보상·마을/세력·변이/성좌·공동 던전/개인 보물·재접속을 확인했습니다.2.5/2.8/2.9개발 월드 복사본의 로딩·저장 후 데이터도 비교했습니다.
+- 부하 측정의16명 구성은 **실제 클라이언트1개+서버 모의 참여자15명**입니다.64마리 구간 서버 틱 중앙값18.86→10.28ms, 복합 보스/메뉴 구간9.35→8.18ms였습니다. 짧은 소프트웨어 렌더링 환경 측정이며 최대 지연도 보고서에 공개합니다.
+
+[**검증 범위와 결과**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-QA.md) · [실측 CSV](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.1/downloads/StarRPG-2.9.1-Performance.csv). 기존2.9의 열 가지 시스템을 포함합니다. 설치·출현 조건은 ZIP의 UPDATE-2.9.1.md, 기능 사용법은 UPDATE-2.9.md를 참고하세요.
+
+<!-- END 2.9.1 -->
 # StarRPG 2.9.0 — 몬스터의 각성
 
 [**통합 설치 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Setup.zip) · [**Eclipse 소스 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Showcase.mp4) · [JAR만](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/starrpg-2.9.0.jar)
