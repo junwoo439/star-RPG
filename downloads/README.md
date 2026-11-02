@@ -1,3 +1,24 @@
+# StarRPG 2.9.0 — 몬스터의 각성
+
+[**통합 설치 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Setup.zip) · [**Eclipse 소스 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Showcase.mp4) · [JAR만](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/starrpg-2.9.0.jar)
+
+**Minecraft1.21.1 / NeoForge21.1.235 / Java21**. ZIP을 완전히 풀고 **install-all-mods.bat** → 생성된 **8개 JAR을 서버와 모든 참여자에게 동일하게 설치**합니다. 이전 StarRPG 및 같은 모드의 이전 JAR을 교체하세요. 모험 모드가 이미 있는 경우 install-dragon-mods.bat으로 핵심5개만 교체할 수도 있습니다. 설치 도구는 공식 배포처에서 외부 JAR을 다운로드하고 해시·모드 ID를 검증합니다.
+
+**Shift+H → 각성**. 요청한 열 가지 확장을 함께 구현했습니다.
+
+- 53종 체형·재질·장식과 관절 동작, 보스 고유 기술·예고·회복·머리/핵 피격 부위. CE 용10종의 기존 관절 모델/비행은 유지합니다. 같은 신체 구조는 기반 관절을 공유하고 종별 외형을 구분합니다.
+- 새 던전의 무작위 보물·함정·문양·비밀방, 도전 열쇠와 강화 보상. 기존 코어/진행 중 던전은 기존 구조를 유지합니다.
+- 적룡·리치·골렘 입체 전설 방어구/무기와 세트 연출, 장신구3칸·제작·강화, 최상위 보스/레이드 성좌 성장.
+- 2~4인 파티·체력/상태 HUD·의뢰와 보스 인원 조정, 최대16인 연합 레이드·기여도 기반 개인 보상.
+- 마을별 평판·할인·세력 의뢰·경비 강화·방어전, 직업 간 원소 반응, 희귀/변이 전용 기술·전리품·도감.
+
+[히드라](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Hydra.png) · [코카트리스](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Cockatrice.png) · [늑대](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Wolf.png) · [오크](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Orc.png) · [전설 장비](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Legendary-Dragon.png) · [각성 메뉴](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Awakening-Menu.png) · [파티 HUD](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Party-HUD.png) · [제작 결과](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.9.0/downloads/StarRPG-2.9.0-Forge-Reveal.png)
+
+**검증:** CE 포함 **245개 통과**, CE 없는 환경 **245개 통과**. 실제 싱글플레이에서53종·메뉴·장비·보스 기술·던전 퍼즐/저장 종료를 확인했습니다. **실제 클라이언트2개를 TCP로 연결**해 파티·아군 보호·제작/장착·레이드 치유 기여/개인 보상·마을/세력·변이/성좌·던전 공동 완료/개인 보물·재접속을 확인했습니다. 여덟 JAR 설치·반복·2.8 백업·충돌 복구·잘못된 원격 해시 거부도 검증했습니다.16인 부하 성능과 Windows Eclipse GUI 자체는 별도 환경 검증 대상입니다.
+
+소스 ZIP은 **StarRPG_Mod/setup-adventure-eclipse.bat → Existing Gradle Project → StarRPG Client**. 직접 빌드는 gradlew.bat build입니다. 기존2.8 등록ID와 장비·강화·직업·스킬 저장 키를 유지하고 새 진행은 별도 저장합니다. 새 각성 던전은 **새 청크**에서 생성됩니다. 상세 안내·검증 범위·출처는 ZIP의 UPDATE-2.9.md / TESTING-2.9.md / THIRD-PARTY-2.9.md입니다.
+
+<!-- END 2.9.0 -->
 # StarRPG 2.8.0 — IceAndFire CE 드래곤 연동
 
 [**통합 설치 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Dragon-Setup.zip) · [**Eclipse 프로젝트 ZIP**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Eclipse.zip) · [**실제 게임 영상**](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/StarRPG-2.8.0-Showcase.mp4) · [StarRPG JAR만](https://github.com/junwoo439/star-RPG/raw/refs/heads/downloads-v2.8.0/downloads/starrpg-2.8.0.jar)
